@@ -13,7 +13,8 @@ export default defineConfig({
     vue(),
     Components({ resolvers: [VantResolver()] })
   ],
-  publicPath: '/mall/', // 添加这一行，替换为你的仓库名
+  base: '/mall/',
+  // base:"https://github.com/ZhangYuanyuan98/mall.git",
   build: {
     outDir: 'dist'
   },
