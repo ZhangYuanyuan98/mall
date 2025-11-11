@@ -13,6 +13,10 @@ export default defineConfig({
     vue(),
     Components({ resolvers: [VantResolver()] })
   ],
+  base: '/mall/', // 添加这一行，替换为你的仓库名
+  build: {
+    outDir: 'dist'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
